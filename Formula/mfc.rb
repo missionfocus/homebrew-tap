@@ -5,28 +5,28 @@
 class Mfc < Formula
   desc "Utility toolbelt for Mission Focus engineers"
   homepage "https://missionfocus.com"
-  version "2.5.23"
+  version "2.5.24"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/missionfocus/mfc/releases/download/v2.5.23/mfc_2.5.23_macOS_x86_64.tar.gz"
-      sha256 "ae1366e8fd74fd76163494e50656cce62c096ed6a2e6747c1ba12dfde60c0ece"
+      url "https://github.com/missionfocus/mfc/releases/download/v2.5.24/mfc_2.5.24_macOS_x86_64.tar.gz"
+      sha256 "4d3242e3e901e4ed6cb7db2c48ea174ac925c1b3cae53b7e51950ec9d0b27755"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/missionfocus/mfc/releases/download/v2.5.23/mfc_2.5.23_macOS_arm64.tar.gz"
-      sha256 "5ad503e084c3299f4987c48060ab4b82d5c2f8770b7ca170918c742cf1b5f870"
+      url "https://github.com/missionfocus/mfc/releases/download/v2.5.24/mfc_2.5.24_macOS_arm64.tar.gz"
+      sha256 "034c9f7d05ea26a958f41c00cf0acad2771355e4132a3ce62f2a1243a6a3492a"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/missionfocus/mfc/releases/download/v2.5.23/mfc_2.5.23_Linux_x86_64.tar.gz"
-      sha256 "db9f67a2803d8add0b57259aeed43b0639f61aa9bf923ed35ec169615ab46188"
+      url "https://github.com/missionfocus/mfc/releases/download/v2.5.24/mfc_2.5.24_Linux_x86_64.tar.gz"
+      sha256 "963e76f2b7a0a2cafd59eacb987cc5decb4d1ef6fde7fef9571a15c6667d1efd"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/missionfocus/mfc/releases/download/v2.5.23/mfc_2.5.23_Linux_arm64.tar.gz"
-      sha256 "9ae04d073f911a33407cc12fa52b0daf65e403d8a2b5b42481ba19b05fdeb455"
+      url "https://github.com/missionfocus/mfc/releases/download/v2.5.24/mfc_2.5.24_Linux_arm64.tar.gz"
+      sha256 "492473ad0f1e2a0fd68a78dfc9ce59fd262713ab6773758388c67a5a6bd24cba"
     end
   end
 
